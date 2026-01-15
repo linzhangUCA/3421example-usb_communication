@@ -10,7 +10,7 @@ BAUD_RATE = 115200
 # BAUD_RATE = 921600
 usb_messenger = serial.Serial(
     SERIAL_PORT, BAUD_RATE, timeout=0.05
-)  # set error recovery time half of the talker's period
+)  # set error recovery time half of the pico talker's period
 print(f"Connected to {SERIAL_PORT}")
 sleep(2)  # Wait briefly for the connection to stabilize
 # Variables
