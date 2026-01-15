@@ -17,7 +17,7 @@ while True:
     now_ms = ticks_ms()
     if ticks_diff(now_ms, last_ms) >= tx_interval_ms:
         out_msg = f"[Pico, {now_ms}]: Hello, {msg_id}\n"
-        sys.stdout.write(out_msg)  # main.py sends this to computer
+        sys.stdout.write(out_msg)  # main.py will send this to computer
         msg_id += 1
         last_ms = now_ms  # update last time stamp
     # Receive data (RX)
